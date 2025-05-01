@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Παραλαβή Αποθεμάτων - ΑΙΓΛΗΣ Mini Market</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #fff3e0, #ffe0b2);
+      color: #333;
+    }
+
+    header {
+      background-color: #e65100;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .input-group {
+      margin-bottom: 2rem;
+    }
+
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 0.3rem;
+    }
+
+    .product-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.8rem;
+    }
+
+    .product-name {
+      font-weight: bold;
+    }
+
+    .confirm-button {
+      background-color: #ff9800;
+      border: none;
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>ΑΙΓΛΗΣ Mini Market</header>
+
+  <div class="container">
+    <div class="section-title">Καταγραφή Παραλαβής Αποθεμάτων</div>
+
+    <div class="input-group">
+      <label for="orderCode">Κωδικός Παραγγελίας:</label>
+      <input type="text" id="orderCode" placeholder="Πληκτρολογήστε ή σκανάρετε τον κωδικό"/>
+    </div>
+
+    <div class="section-title">Προϊόντα Παραγγελίας</div>
+
+
+    <div class="product-row">
+      <div>
+        <div class="product-name">Μακαρόνια Νο6</div>
+        <div>Κωδικός: 123456</div>
+      </div>
+      <div>
+        <input type="number" min="0" placeholder="Τεμάχια" />
+        <button class="confirm-button">Καταγραφή</button>
+      </div>
+    </div>
+
+  
+    <div class="product-row">
+      <div>
+        <div class="product-name">Νερό 1.5L</div>
+        <div>Κωδικός: 789012</div>
+      </div>
+      <div>
+        <input type="number" min="0" placeholder="Τεμάχια" />
+        <button class="confirm-button">Καταγραφή</button>
+      </div>
+    </div>
+
+ 
+    <div class="product-row">
+      <div>
+        <div class="product-name">Χαρτοπετσέτες</div>
+        <div>Κωδικός: 345678</div>
+      </div>
+      <div>
+        <input type="number" min="0" placeholder="Τεμάχια" />
+        <button class="confirm-button">Καταγραφή</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Δημιουργία Παραγγελίας - ΑΙΓΛΗΣ Mini Market</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe0b2, #fff8e1);
+      color: #333;
+    }
+
+    header {
+      background-color: #e65100;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .product-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-name {
+      font-weight: bold;
+    }
+
+    .stock {
+      color: #b71c1c;
+    }
+
+    .add-button {
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .quantity-input {
+      margin-top: 0.5rem;
+      display: none;
+    }
+
+    .quantity-input input {
+      width: 60px;
+      padding: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>ΑΙΓΛΗΣ Mini Market</header>
+
+  <div class="container">
+    <h2>Προϊόντα με Χαμηλό Απόθεμα</h2>
+
+   
+    <div class="product-row">
+      <div class="product-info">
+        <div class="product-name">Ζάχαρη</div>
+        <div class="stock">Απόθεμα: 0</div>
+      </div>
+      <div>
+        <button class="add-button" onclick="toggleInput(this)">Προσθήκη</button>
+        <div class="quantity-input">
+          <label>Ποσότητα:</label>
+          <input type="number" min="1" placeholder="π.χ. 10"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-row">
+      <div class="product-info">
+        <div class="product-name">Ρύζι</div>
+        <div class="stock">Απόθεμα: 0</div>
+      </div>
+      <div>
+        <button class="add-button" onclick="toggleInput(this)">Προσθήκη</button>
+        <div class="quantity-input">
+          <label>Ποσότητα:</label>
+          <input type="number" min="1" placeholder="π.χ. 15"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-row">
+      <div class="product-info">
+        <div class="product-name">Χαρτί Κουζίνας</div>
+        <div class="stock">Απόθεμα: 2</div>
+      </div>
+      <div>
+        <button class="add-button" onclick="toggleInput(this)">Προσθήκη</button>
+        <div class="quantity-input">
+          <label>Ποσότητα:</label>
+          <input type="number" min="1" placeholder="π.χ. 8"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-row">
+      <div class="product-info">
+        <div class="product-name">Χυμός Πορτοκάλι</div>
+        <div class="stock">Απόθεμα: 3</div>
+      </div>
+      <div>
+        <button class="add-button" onclick="toggleInput(this)">Προσθήκη</button>
+        <div class="quantity-input">
+          <label>Ποσότητα:</label>
+          <input type="number" min="1" placeholder="π.χ. 5"/>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleInput(button) {
+      const container = button.nextElementSibling;
+      container.style.display = container.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

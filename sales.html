@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Καταγραφή Πώλησης - ΑΙΓΛΗΣ Mini Market</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f9a825, #fff3e0);
+      color: #333;
+    }
+
+    header {
+      background-color: #e65100;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .input-group {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    .input-group input {
+      flex: 1;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .cart-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+    }
+
+    .cart-table th, .cart-table td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    .discount {
+      margin-bottom: 1rem;
+    }
+
+    .total {
+      text-align: right;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .remove-btn {
+      background-color: #ff7043;
+      border: none;
+      color: white;
+      padding: 0.3rem 0.6rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .remove-btn:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+
+  <header>ΑΙΓΛΗΣ Mini Market</header>
+
+  <div class="container">
+    <div class="input-group">
+      <input type="text" placeholder="Εισάγετε ή σαρώστε τον κωδικό προϊόντος..." />
+    </div>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Προϊόν</th>
+          <th>Ποσότητα</th>
+          <th>Τιμή/Τεμάχιο</th>
+          <th>Σύνολο</th>
+          <th>Αφαίρεση</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ψωμί</td>
+          <td>2</td>
+          <td>1.20€</td>
+          <td>2.40€</td>
+          <td><button class="remove-btn">X</button></td>
+        </tr>
+        <tr>
+          <td>Γάλα</td>
+          <td>1</td>
+          <td>1.50€</td>
+          <td>1.50€</td>
+          <td><button class="remove-btn">X</button></td>
+        </tr>
+        <tr>
+          <td>Βούτυρο</td>
+          <td>1</td>
+          <td>2.00€</td>
+          <td>2.00€</td>
+          <td><button class="remove-btn">X</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="discount">
+      <label for="discount-code">Εκπτωτικός Κωδικός:</label>
+      <input type="text" id="discount-code" placeholder="Εισάγετε κωδικό...">
+    </div>
+
+    <div class="total">
+      Σύνολο: 5.90€
+    </div>
+  </div>
+
+</body>
+</html>

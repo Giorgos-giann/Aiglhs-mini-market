@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Αναζήτηση Προϊόντος - ΑΙΓΛΗΣ Mini Market</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f9a825, #fff3e0);
+      color: #333;
+    }
+
+    header {
+      background-color: #e65100;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .search-box {
+      margin-bottom: 1.5rem;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .product-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .product-item {
+      padding: 1rem;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .product-name {
+      font-weight: bold;
+    }
+
+    .product-info {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>ΑΙΓΛΗΣ Mini Market</header>
+
+  <div class="container">
+    <div class="search-box">
+      <input type="text" placeholder="Αναζήτηση προϊόντος..." />
+    </div>
+
+    <ul class="product-list">
+      <li class="product-item">
+        <div>
+          <div class="product-name">Γάλα Πλήρες Νουνού</div>
+          <div class="product-info">Κωδικός: 1001 | Απόθεμα: 12</div>
+        </div>
+        <div class="product-price">1.50€</div>
+      </li>
+
+      <li class="product-item">
+        <div>
+          <div class="product-name">Γάλα Πλήρες Όλυμπος</div>
+          <div class="product-info">Κωδικός: 1008 | Απόθεμα: 8</div>
+        </div>
+        <div class="product-price">1.20€</div>
+      </li>
+
+      <li class="product-item">
+        <div>
+          <div class="product-name">Γάλα Νουνού χωρίς λακτόζη</div>
+          <div class="product-info">Κωδικός: 1003 | Απόθεμα: 4</div>
+        </div>
+        <div class="product-price">2.00€</div>
+      </li>
+      <li class="product-item">
+        <div>
+          <div class="product-name">Φρέσκο Γάλα Βλάχας</div>
+          <div class="product-info">Κωδικός: 1021 | Απόθεμα: 20</div>
+        </div>
+        <div class="product-price">1.00€</div>
+      </li>
+      <li class="product-item">
+        <div>
+          <div class="product-name">Φρέσκο Γάλα Βλάχας χωρίς λακτόζη</div>
+          <div class="product-info">Κωδικός: 1023 | Απόθεμα: 14</div>
+        </div>
+        <div class="product-price">1.10€</div>
+      </li>
+      <li class="product-item">
+        <div>
+          <div class="product-name">Κατσικίσιο Γάλα</div>
+          <div class="product-info">Κωδικός: 0997 | Απόθεμα: 4</div>
+        </div>
+        <div class="product-price">2.10€</div>
+      </li>
+     </ul>
+  </div>
+
+</body>
+</html>
